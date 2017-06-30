@@ -8,3 +8,13 @@ C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.D
 C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.dll
 C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.pdb
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.dll
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.pdb
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\DVT.DataAccess.dll.config
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\DVT.DataAccess.dll
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\DVT.DataAccess.pdb
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\EntityFramework.SqlServer.xml

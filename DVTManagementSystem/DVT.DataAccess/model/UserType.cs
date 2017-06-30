@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DVT.DataAccess.model
 {
-    class UserType
+ public    class UserType
     {
         public int UserTypeID { get; set; }
         public string UserTypeName { get; set; }

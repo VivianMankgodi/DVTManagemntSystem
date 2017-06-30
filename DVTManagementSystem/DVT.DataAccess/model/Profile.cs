@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using DVT.DataAccess.model;
 
-namespace DVT.DataAccess.model
+namespace DVT.DataAccess
 {
-   public class Profile
+  public   class Profile
     {
         public int ProfileID { get; set; }
         [Required]
@@ -25,6 +25,9 @@ namespace DVT.DataAccess.model
         public virtual ICollection<Department> department { get; set; }
         public virtual ICollection<Gender> gender { get; set; }
         public virtual UserType usertype { get; set; }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6982b5bc425f6065a27a34c5a7fd3cff6e85faeb
     }
 }

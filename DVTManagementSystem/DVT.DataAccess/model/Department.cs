@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DVT.DataAccess.model
 {
-    class Department
+  public   class Department
     {
         public int DepartmentID { get; set; }
         [Required]

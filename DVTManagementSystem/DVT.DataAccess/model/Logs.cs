@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-using DVT.DataAccess.model;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DVT.DataAccess
 {
@@ -24,6 +24,8 @@ public Logs()
         [Required]
         public DateTime LogDateTime { get; set; }
 
+       [ForeignKey("ProfileID")]
+       [Required ]
         public int UserProfileID { get; set; }
 
         public Profile profile { get; set; }

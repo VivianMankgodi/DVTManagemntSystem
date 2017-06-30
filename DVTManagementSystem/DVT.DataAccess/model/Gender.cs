@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DVT.DataAccess.model
 {
-    class Gender
+public     class Gender
     {
         public int GenderID { get; set; }
         [Required]

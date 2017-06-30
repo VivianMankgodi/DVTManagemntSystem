@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace DVT.DataAccess.model
 {
-    class Profile
+   public class Profile
     {
         public int ProfileID { get; set; }
         [Required]
         public string FirstName { get; set; }
+
+        public ICollection<Logs> logs { get; set; }
     }
 }

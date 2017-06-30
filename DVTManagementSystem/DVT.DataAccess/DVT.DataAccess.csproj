@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+
     <Compile Include="Logs.cs" />
     <Compile Include="model\Addresses.cs" />
     <Compile Include="model\AddressType.cs" />
@@ -58,11 +59,20 @@
     <Compile Include="model\Profile.cs" />
     <Compile Include="model\Province.cs" />
     <Compile Include="model\Suburb.cs" />
+
+    <Compile Include="model\Department.cs" />
+    <Compile Include="model\Gender.cs" />
+    <Compile Include="model\Profile.cs" />
+    <Compile Include="model\UserType.cs" />
+
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Context\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

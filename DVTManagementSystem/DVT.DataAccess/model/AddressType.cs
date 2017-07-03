@@ -13,13 +13,13 @@ namespace DVT.DataAccess.model
         {
 
         }
-        [Key ]
+        
         public int AddressTypeId { get; set; }
         [Required ]
         [StringLength(20)]
         public string AddressTypeName { get; set; }
 
-        public ICollection<Addresses > address { get; set; }
+        public virtual  ICollection<Addresses > address { get; set; }
 
         
     }

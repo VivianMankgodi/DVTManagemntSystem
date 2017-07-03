@@ -18,3 +18,5 @@ C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAcce
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\EntityFramework.xml
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.initial2.resources
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.csproj.GenerateResource.Cache

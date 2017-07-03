@@ -16,18 +16,19 @@ public Logs()
 
         }
 
-        [Key]
-        public int LogID { get; set; }
+        
+        public int LogsID { get; set; }
         [Required ]
         [StringLength(maximumLength:255)]
         public string Message { get; set; }
         [Required]
         public DateTime LogDateTime { get; set; }
 
-       [ForeignKey("ProfileID")]
-       [Required ]
-        public int UserProfileID { get; set; }
+       //[ForeignKey("ProfileID")]
+       //[Required ]
+       // public int UserProfileID { get; set; }
 
-        public Profile profile { get; set; }
+        public virtual Profile profile { get; set; }
+       
     }
 }

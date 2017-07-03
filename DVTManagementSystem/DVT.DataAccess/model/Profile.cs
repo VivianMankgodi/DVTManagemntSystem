@@ -13,17 +13,14 @@ namespace DVT.DataAccess
         public int ProfileID { get; set; }
         [Required]
         public string FirstName { get; set; }
-
-
-        public ICollection<Logs> logs { get; set; }
-
         public string LastName { get; set; }
         public string Email { get; set; }
         public string PasswordHash { get; set; }
         public bool isApproved { get; set; }
-
-        public virtual ICollection<Department> department { get; set; }
-        public virtual ICollection<Gender> gender { get; set; }
+        public virtual Department department { get; set; }
+        public virtual Gender gender { get; set; }
         public virtual UserType usertype { get; set; }
+        public ICollection<Logs> logs { get; set; }
+
     }
 }

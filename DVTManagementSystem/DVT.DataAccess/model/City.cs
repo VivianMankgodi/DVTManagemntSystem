@@ -16,17 +16,17 @@ namespace DVT.DataAccess.model
         }
 
        
-        [Key ]
+       
         public int CityID { get; set; }
 
         [Required]
         [StringLength(maximumLength:255)]
         public string CityName { get; set; }
 
-        [ForeignKey("ProvinceID")]
-        public Nullable<int> ProvinceID { get; set; }
+        //[ForeignKey("ProvinceID")]
+        //public Nullable<int> ProvinceID { get; set; }
 
-        public Province province { get; set; }
+        public virtual Province province { get; set; }
 
         public virtual ICollection<Suburb > suburbs { get; set; }
     }

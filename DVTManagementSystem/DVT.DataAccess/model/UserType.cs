@@ -11,6 +11,6 @@ namespace DVT.DataAccess.model
         public int UserTypeID { get; set; }
         public string UserTypeName { get; set; }
 
-        public virtual Profile profile { get; set; }
+        public virtual ICollection <Profile> profile { get; set; }
     }
 }

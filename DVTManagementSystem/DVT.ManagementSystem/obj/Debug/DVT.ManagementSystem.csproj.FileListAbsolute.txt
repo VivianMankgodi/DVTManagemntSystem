@@ -11,3 +11,10 @@ C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.M
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\DVT.ManagementSystem.exe.config
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\obj\Debug\DVT.ManagementSystem.exe
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\obj\Debug\DVT.ManagementSystem.pdb
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\DVT.ManagementSystem.exe
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\DVT.ManagementSystem.pdb
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\EntityFramework.dll
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\EntityFramework.xml
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.ManagementSystem\obj\Debug\DVT.ManagementSystem.csprojResolveAssemblyReference.cache

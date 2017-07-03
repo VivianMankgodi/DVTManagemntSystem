@@ -15,21 +15,21 @@ namespace DVT.DataAccess.model
 
         }
 
-        [Key ]
+        
         public int SuburbID { get; set; }
         [Required ]
         [StringLength(maximumLength:255)]
         public string SuburbName { get; set; }
         
-        [ForeignKey("PostalCodeID")]
-        public Nullable<int> PostalCodeID { get; set; }
+        //[ForeignKey("PostalCodeID")]
+        //public Nullable<int> PostalCodeID { get; set; }
 
-        [ForeignKey("CityID")]
-        public Nullable<int> CityID { get; set; }
+        //[ForeignKey("CityID")]
+        //public Nullable<int> CityID { get; set; }
 
         
-        public PostalCode postalCode { get; set; }
-        public City city { get; set; }
+        public virtual PostalCode postalCode { get; set; }
+        public virtual City city { get; set; }
 
 
     }

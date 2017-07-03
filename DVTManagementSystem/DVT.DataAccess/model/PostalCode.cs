@@ -14,12 +14,12 @@ namespace DVT.DataAccess.model
 
         }
 
-        [Key]
         public int PostalCodeID { get; set; }
         [Required]
         [StringLength(4)]
         public string PostalCodeNumber { get; set; }
 
+        public virtual  ICollection<Suburb> Suburb { get; set; }
 
     }
 }

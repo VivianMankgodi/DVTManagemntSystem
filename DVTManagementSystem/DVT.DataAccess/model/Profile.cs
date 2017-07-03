@@ -25,9 +25,6 @@ namespace DVT.DataAccess
         public virtual ICollection<Department> department { get; set; }
         public virtual ICollection<Gender> gender { get; set; }
         public virtual UserType usertype { get; set; }
-<<<<<<< HEAD
 
-=======
->>>>>>> 6982b5bc425f6065a27a34c5a7fd3cff6e85faeb
     }
 }

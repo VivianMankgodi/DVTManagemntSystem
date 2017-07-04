@@ -10,6 +10,20 @@ namespace DVT.DataAccess
 {
   public   class Profile
     {
+        public Profile( string firstName, string lastName, string email, string passwordHash, bool isApproved)
+        {
+          
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            PasswordHash = passwordHash;
+            this.isApproved = isApproved;
+            this.department = department;
+            this.gender = gender;
+            this.usertype = usertype;
+            this.logs = logs;
+        }
+
         public int ProfileID { get; set; }
         [Required]
         public string FirstName { get; set; }

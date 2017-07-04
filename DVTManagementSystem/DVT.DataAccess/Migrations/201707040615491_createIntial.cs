@@ -3,7 +3,7 @@ namespace DVT.DataAccess.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial2 : DbMigration
+    public partial class createIntial : DbMigration
     {
         public override void Up()
         {

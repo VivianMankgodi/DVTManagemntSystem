@@ -22,9 +22,7 @@ namespace DVT.DataAccess.model
         [Required]
         [StringLength(maximumLength:255)]
         public string CityName { get; set; }
-
-        //[ForeignKey("ProvinceID")]
-        //public Nullable<int> ProvinceID { get; set; }
+        public Nullable<int> ProvinceID { get; set; }
 
         public virtual Province province { get; set; }
 

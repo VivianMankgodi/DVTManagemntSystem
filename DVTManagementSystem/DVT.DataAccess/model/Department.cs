@@ -9,6 +9,14 @@ namespace DVT.DataAccess.model
 {
   public   class Department
     {
+        public Department(int departmentID, string departmentName, string departmentDescription)
+        {
+            DepartmentID = departmentID;
+            DepartmentName = departmentName;
+            DepartmentDescription = departmentDescription;
+            this.profile = profile;
+        }
+
         public int DepartmentID { get; set; }
         [Required]
         public String DepartmentName { get; set; }

@@ -51,9 +51,22 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Context\ManagementSystemContext.cs" />
-    <Compile Include="Migrations\201707031306034_initial2.cs" />
-    <Compile Include="Migrations\201707031306034_initial2.Designer.cs">
-      <DependentUpon>201707031306034_initial2.cs</DependentUpon>
+    <Compile Include="DataAccesses\DataAccess.cs" />
+    <Compile Include="Migrations\201707040615491_createIntial.cs" />
+    <Compile Include="Migrations\201707040615491_createIntial.Designer.cs">
+      <DependentUpon>201707040615491_createIntial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707040905363_createinitial3.cs" />
+    <Compile Include="Migrations\201707040905363_createinitial3.Designer.cs">
+      <DependentUpon>201707040905363_createinitial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707040947288_createinitial4.cs" />
+    <Compile Include="Migrations\201707040947288_createinitial4.Designer.cs">
+      <DependentUpon>201707040947288_createinitial4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707040949081_createinitial41.cs" />
+    <Compile Include="Migrations\201707040949081_createinitial41.Designer.cs">
+      <DependentUpon>201707040949081_createinitial41.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Logs.cs" />
@@ -70,15 +83,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DataAccess\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201707031306034_initial2.resx">
-      <DependentUpon>201707031306034_initial2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707040615491_createIntial.resx">
+      <DependentUpon>201707040615491_createIntial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707040905363_createinitial3.resx">
+      <DependentUpon>201707040905363_createinitial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707040947288_createinitial4.resx">
+      <DependentUpon>201707040947288_createinitial4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707040949081_createinitial41.resx">
+      <DependentUpon>201707040949081_createinitial41.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

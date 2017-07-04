@@ -7,13 +7,13 @@ namespace DVT.DataAccess.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class initial2 : IMigrationMetadata
+    public sealed partial class createinitial41 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initial2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(createinitial41));
         
         string IMigrationMetadata.Id
         {
-            get { return "201707031306034_initial2"; }
+            get { return "201707040949081_createinitial41"; }
         }
         
         string IMigrationMetadata.Source

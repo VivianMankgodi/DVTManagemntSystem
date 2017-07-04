@@ -13,9 +13,7 @@ namespace DVT.DataAccess.model
         {
         }
         public int AddressesID { get; set; }
-        
-        //public Nullable<int> AddressTypeID { get; set; }
-        //public Nullable<int> SuburbID { get; set; }        
+           
         public int Unitno { get; set; }
         [Required]
         [StringLength(maximumLength:255)]
@@ -25,6 +23,9 @@ namespace DVT.DataAccess.model
 
         [StringLength(maximumLength:(255))]
         public string Streetname { get; set; }
+
+        public int AddressTypeId { get; set; }
+        public int SuburbID { get; set; }
 
         public virtual AddressType addressType { get; set; }
         public virtual Suburb  suburb { get; set; }

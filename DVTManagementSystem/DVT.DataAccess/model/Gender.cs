@@ -13,6 +13,6 @@ public     class Gender
         [Required]
         public string GenderName { get; set; }
 
-        public virtual Profile profile { get; set; }
+        public virtual ICollection <Profile> profile { get; set; }
     }
 }

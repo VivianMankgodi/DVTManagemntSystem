@@ -14,7 +14,7 @@ namespace DVT.DataAccess.model
 
         }
         
-        public int AddressTypeId { get; set; }
+        public int AddressTypeID { get; set; }
         [Required ]
         [StringLength(20)]
         public string AddressTypeName { get; set; }

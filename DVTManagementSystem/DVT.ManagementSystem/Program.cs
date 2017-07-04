@@ -10,9 +10,11 @@ namespace DVT.ManagementSystem
     {
         static void Main(string[] args)
         {
-            DataAccess.DataAccesses.DataAccess da = new DataAccess.DataAccesses.DataAccess();
-            da.insertProfile("lee", "fgt", "kfg@hgd", "hghg", true);
+           DataAccess.DataAccesses.DataAccess da = new DataAccess.DataAccesses.DataAccess();
+           da.insertProfile("lee", "lee", "kfg@hgd", "hghg", true, 1,1,2);
 
+
+            da.InsertAddresses(120, "hello", "012", "kk", 1, 1, 2);
                 }
     }
 }

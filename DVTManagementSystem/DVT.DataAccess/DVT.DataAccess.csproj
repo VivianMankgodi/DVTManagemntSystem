@@ -68,6 +68,26 @@
     <Compile Include="Migrations\201707040949081_createinitial41.Designer.cs">
       <DependentUpon>201707040949081_createinitial41.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707041243349_createIntial6.cs" />
+    <Compile Include="Migrations\201707041243349_createIntial6.Designer.cs">
+      <DependentUpon>201707041243349_createIntial6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707041245371_createIntial7.cs" />
+    <Compile Include="Migrations\201707041245371_createIntial7.Designer.cs">
+      <DependentUpon>201707041245371_createIntial7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707041301058_createIntial98.cs" />
+    <Compile Include="Migrations\201707041301058_createIntial98.Designer.cs">
+      <DependentUpon>201707041301058_createIntial98.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707041318483_createIntial9.cs" />
+    <Compile Include="Migrations\201707041318483_createIntial9.Designer.cs">
+      <DependentUpon>201707041318483_createIntial9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707041403585_createIntial10.cs" />
+    <Compile Include="Migrations\201707041403585_createIntial10.Designer.cs">
+      <DependentUpon>201707041403585_createIntial10.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Logs.cs" />
     <Compile Include="model\Addresses.cs" />
@@ -101,6 +121,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707040949081_createinitial41.resx">
       <DependentUpon>201707040949081_createinitial41.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041243349_createIntial6.resx">
+      <DependentUpon>201707041243349_createIntial6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041245371_createIntial7.resx">
+      <DependentUpon>201707041245371_createIntial7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041301058_createIntial98.resx">
+      <DependentUpon>201707041301058_createIntial98.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041318483_createIntial9.resx">
+      <DependentUpon>201707041318483_createIntial9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041403585_createIntial10.resx">
+      <DependentUpon>201707041403585_createIntial10.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

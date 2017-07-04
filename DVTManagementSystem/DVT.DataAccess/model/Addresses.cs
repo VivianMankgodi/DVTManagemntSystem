@@ -9,9 +9,20 @@ namespace DVT.DataAccess.model
 {
    public  class Addresses
     {
-        public Addresses()
+       /* public Addresses()
         {
         }
+*/
+        public Addresses(int unitno, string complexName, string streetno, string streetname, int addressTypeId, int suburbId)
+        {          
+            Unitno = unitno;
+            ComplexName = complexName;
+            Streetno = streetno;
+            Streetname = streetname;
+            AddressTypeID = addressTypeId;
+            SuburbID = suburbId;         
+        }
+
         public int AddressesID { get; set; }
            
         public int Unitno { get; set; }
@@ -24,11 +35,13 @@ namespace DVT.DataAccess.model
         [StringLength(maximumLength:(255))]
         public string Streetname { get; set; }
 
-        public int AddressTypeId { get; set; }
+        public int AddressTypeID { get; set; }
         public int SuburbID { get; set; }
 
         public virtual AddressType addressType { get; set; }
         public virtual Suburb  suburb { get; set; }
         
+        public ICollection<Profile> profiles { get; set; }
+
     }
 }

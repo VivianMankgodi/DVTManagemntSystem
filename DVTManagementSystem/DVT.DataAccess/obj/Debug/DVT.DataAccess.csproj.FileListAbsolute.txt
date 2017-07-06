@@ -27,6 +27,23 @@ C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAcce
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.csproj.GenerateResource.Cache
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.dll
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.pdb
+<<<<<<< HEAD
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.initials.resources
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.initials1.resources
+=======
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createIntial.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createinitial3.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createinitial4.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createinitial41.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createIntial6.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createIntial7.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createIntial98.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createIntial9.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.createIntial10.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.csproj.GenerateResource.Cache
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.seedingdata.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.seedingdata2.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.seedingdata21.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.DataAccess\obj\Debug\DVT.DataAccess.Migrations.changedata.resources
+>>>>>>> 501abd27d4ea0ffb9be2c0416a7efc65bc3ba5b2

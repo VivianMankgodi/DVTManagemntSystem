@@ -88,13 +88,31 @@
     <Compile Include="Migrations\201707041403585_createIntial10.Designer.cs">
       <DependentUpon>201707041403585_createIntial10.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Migrations\201707041836282_initials.cs" />
     <Compile Include="Migrations\201707041836282_initials.Designer.cs">
       <DependentUpon>201707041836282_initials.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201707041838454_initials1.cs" />
-    <Compile Include="Migrations\201707041838454_initials1.Designer.cs">
+    <Compile Include="Migrations\201707041838454_initials1.Designer.cs"/>
       <DependentUpon>201707041838454_initials1.cs</DependentUpon>
+
+    <Compile Include="Migrations\201707041456149_seedingdata.cs" />
+    <Compile Include="Migrations\201707041456149_seedingdata.Designer.cs">
+      <DependentUpon>201707041456149_seedingdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707041457396_seedingdata2.cs" />
+    <Compile Include="Migrations\201707041457396_seedingdata2.Designer.cs">
+      <DependentUpon>201707041457396_seedingdata2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707041521046_seedingdata21.cs" />
+    <Compile Include="Migrations\201707041521046_seedingdata21.Designer.cs">
+      <DependentUpon>201707041521046_seedingdata21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707050657428_changedata.cs" />
+    <Compile Include="Migrations\201707050657428_changedata.Designer.cs">
+      <DependentUpon>201707050657428_changedata.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Logs.cs" />
@@ -145,11 +163,25 @@
     <EmbeddedResource Include="Migrations\201707041403585_createIntial10.resx">
       <DependentUpon>201707041403585_createIntial10.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Migrations\201707041836282_initials.resx">
       <DependentUpon>201707041836282_initials.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707041838454_initials1.resx">
+    <EmbeddedResource Include="Migrations\201707041838454_initials1.resx"/>
       <DependentUpon>201707041838454_initials1.cs</DependentUpon>
+
+    <EmbeddedResource Include="Migrations\201707041456149_seedingdata.resx">
+      <DependentUpon>201707041456149_seedingdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041457396_seedingdata2.resx">
+      <DependentUpon>201707041457396_seedingdata2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041521046_seedingdata21.resx">
+      <DependentUpon>201707041521046_seedingdata21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707050657428_changedata.resx">
+      <DependentUpon>201707050657428_changedata.cs</DependentUpon>
+
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,15 +13,18 @@ namespace DVT.DataAccess.model
         {
          //   profiles = new List<Profile>();
         }
+<<<<<<< HEAD
 
         public Addresses(int unitno, string complexName, string streetno, string streetname, int addressTypeId, int suburbId)
+=======
+*/
+        public Addresses(int unitno, string complexName, string streetno, string streetname)
+>>>>>>> 501abd27d4ea0ffb9be2c0416a7efc65bc3ba5b2
         {          
             Unitno = unitno;
             ComplexName = complexName;
             Streetno = streetno;
             Streetname = streetname;
-            AddressTypeID = addressTypeId;
-            SuburbID = suburbId;         
         }
 
         public int AddressesID { get; set; }
@@ -35,9 +38,6 @@ namespace DVT.DataAccess.model
 
         [StringLength(maximumLength:(255))]
         public string Streetname { get; set; }
-
-        public int AddressTypeID { get; set; }
-        public int SuburbID { get; set; }
 
         public virtual AddressType addressType { get; set; }
         public virtual Suburb  suburb { get; set; }

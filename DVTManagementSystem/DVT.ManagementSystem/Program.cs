@@ -14,6 +14,8 @@ namespace DVT.ManagementSystem
       //    da.insertProfile("lee", "lee", "kfg@hgd", "hghg", true, 1,1,2);
 
             da.InsertAddresses(120, "hello", "012", "kk", 3, 1, 8);
+           da.UpdateProfileAddress(15,3);
+            da.RemoveProfileAddress(15,3);
        }
     }
 }

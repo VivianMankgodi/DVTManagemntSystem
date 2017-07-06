@@ -10,11 +10,13 @@ namespace DVT.ManagementSystem
     {
         static void Main(string[] args)
         {
-           DataAccess.DataAccesses.DataAccess da = new DataAccess.DataAccesses.DataAccess();
-           da.insertProfile("lee", "lee", "kfg@hgd", "hghg", true, 1,1,2);
+            DataAccess.DataAccesses.DataAccess da = new DataAccess.DataAccesses.DataAccess();
 
+            //  da.insertProfile("Vivi ", "tebe", "kfg@hgd", "hghg", true, 1,1,2);
+            //     int newprofileID = da.insertProfile("Vivi ", "tebe", "kfg@hgd", "hghg", true, 1, 1, 2);
 
-            da.InsertAddresses(120, "hello", "012", "kk", 1, 1, 2);
-                }
+            //da.InsertAddresses(120, "hello", "012", "kk", 1, 1, 16);
+            da.UpdateProfileAddress(16,1);
+        }
     }
 }

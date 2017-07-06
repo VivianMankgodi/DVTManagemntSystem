@@ -21,16 +21,7 @@ namespace DVT.DataAccess.DataAccesses
             context.SaveChanges();
         }
 
-        public void InsertAddresses(int UnitNo, string ComplexName, string StreetNo, string StreetName, int AddressTypeId, int SuburbID, int profileid)
-        {
-            var profile = context.Profiles.Find(1);
-            Addresses address = new Addresses(UnitNo, ComplexName, StreetNo, StreetName, AddressTypeId, SuburbID);
-            address.profiles.Add(profile);
-            context.Addresses.Add(address);
-            context.SaveChanges();
-
-
-        }
+   
 
 
     }

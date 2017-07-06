@@ -88,6 +88,14 @@
     <Compile Include="Migrations\201707041403585_createIntial10.Designer.cs">
       <DependentUpon>201707041403585_createIntial10.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707041836282_initials.cs" />
+    <Compile Include="Migrations\201707041836282_initials.Designer.cs">
+      <DependentUpon>201707041836282_initials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707041838454_initials1.cs" />
+    <Compile Include="Migrations\201707041838454_initials1.Designer.cs">
+      <DependentUpon>201707041838454_initials1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Logs.cs" />
     <Compile Include="model\Addresses.cs" />
@@ -136,6 +144,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707041403585_createIntial10.resx">
       <DependentUpon>201707041403585_createIntial10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041836282_initials.resx">
+      <DependentUpon>201707041836282_initials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041838454_initials1.resx">
+      <DependentUpon>201707041838454_initials1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

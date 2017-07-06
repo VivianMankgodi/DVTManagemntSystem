@@ -25,6 +25,10 @@ namespace DVT.DataAccess
           
         }
 
+        public Profile()
+        {
+           // addresses = new List<Addresses>();
+        }
         public int ProfileID { get; set; }
         [Required]
         public string FirstName { get; set; } 
@@ -38,8 +42,8 @@ namespace DVT.DataAccess
         public virtual Department department { get; set; }
         public virtual Gender gender { get; set; }
         public virtual UserType usertype { get; set; }
-        public ICollection<Logs> logs { get; set; }
-        public ICollection<Addresses> addresses { get; set; }
+        public virtual  ICollection<Logs> logs { get; set; }
+        public virtual ICollection<Addresses> addresses { get; set; }
 
     }
 }

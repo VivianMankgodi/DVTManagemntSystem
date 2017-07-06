@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Data.Entity;
 
 namespace DVT.DataAccess.DataAccesses
 {
@@ -51,17 +51,40 @@ namespace DVT.DataAccess.DataAccesses
             context.SaveChanges();
 
         }
+        public void UpdateProfileAddress(int profileid, int AddressID)
+        {
+            var profile = context.Profiles.Where(x => x.ProfileID == profileid).FirstOrDefault();
+            var address = context.Addresses.Where(a => a.AddressesID == AddressID).FirstOrDefault();
 
+            profile.addresses = new List<Addresses>();
+            profile.addresses.Add(address);
+            address.profiles.Add(profile);
+            context.SaveChanges();
+
+
+        }
+        public void RemoveProfileAddress(int profileid, int AddressID)
+        {
+            var profile = context.Profiles.Include(x => x.addresses).Where(x => x.ProfileID == profileid).FirstOrDefault();
+            var address = context.Addresses.Where(a => a.AddressesID == AddressID).FirstOrDefault();
+
+            profile.addresses.Remove(address);
+
+            context.SaveChanges();
+
+
+        }
         public void RemoveProfile(int profileId)
         {
             var profile = context.Profiles.Find(profileId);
             var profile2 = context.Profiles.Find(profile);
+
         }
 
 
     }
-    
-  
+
+
 }
 
 

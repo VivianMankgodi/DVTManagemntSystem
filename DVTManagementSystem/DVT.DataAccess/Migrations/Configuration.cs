@@ -30,34 +30,27 @@ namespace DVT.DataAccess.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-       /*     context.provinces.AddOrUpdate(
-               pro => pro.ProvinceID  ,
-                new Province { ProvinceName = "Gauteng"},
-                new Province { ProvinceName = "Limpopo"}
-                );
-       
-           context.Cities.AddOrUpdate(
-                ci => ci.CityID ,
-                new City { CityName = "Johannesburg", ProvinceID = 1 },
-                new City { CityName = "Tshwane", ProvinceID = 1 }
+            Province p1 = new Province { ProvinceName = "Gauteng" };
+            Province p2 = new Province { ProvinceName = "Limpopo" };
+           context.provinces.AddOrUpdate(
+               p1,p2
                 );
 
-            context.PostalCodes.AddOrUpdate(
-                pos => pos.PostalCodeID ,
-                new PostalCode {PostalCodeNumber = "2192" },
-                new PostalCode { PostalCodeNumber = "2190" },
-                new PostalCode { PostalCodeNumber = "2091"}
-                );
-              
+            City c1 = new City { CityName = "Johannesburg",  province = p1 };
+            City c2 = new City { CityName = "Tshwane",  province = p1 };
 
-            context.suburbs.AddOrUpdate(
-                sub => sub.SuburbID ,
-                new Suburb { SuburbName = "ABBOTSFORD", PostalCodeID  = 1, CityID = 1, SuburbID = 1 },
-                new Suburb { SuburbName = "AEROTON", PostalCodeID = 2, CityID = 1, SuburbID = 1 },
-                new Suburb { SuburbName = "ALAN MANOR", PostalCodeID = 3, CityID = 1, SuburbID = 1 }
-                );
+            context.Cities.AddOrUpdate(c1,c2);
 
+            PostalCode pc1 = new PostalCode { PostalCodeNumber = "2192" };
+            PostalCode pc2 = new PostalCode { PostalCodeNumber = "2190" };
+            PostalCode pc3 = new PostalCode { PostalCodeNumber = "2091" };
 
+            context.PostalCodes.AddOrUpdate(pc1,pc2,pc3 );
+
+            Suburb s1 = new Suburb { SuburbName = "ABBOTSFORD",postalCode= pc1,city= c1};
+            Suburb s2 = new Suburb { SuburbName = "AEROTON",postalCode=pc2, city= c1 };
+            Suburb s3 = new Suburb { SuburbName = "ALAN MANOR", postalCode = pc3, city= c1};
+            context.suburbs.AddOrUpdate(s1,s2,s3 );
 
             context.Departments.AddOrUpdate(
                 p => p.DepartmentID,
@@ -75,14 +68,14 @@ namespace DVT.DataAccess.Migrations
                 p=>p.UserTypeID,
                 new model.UserType { UserTypeName = "Admin"},
                  new model.UserType { UserTypeName = "Employee" }
-                );*/
+                );
 
-         /*   context.AddressTypes.AddOrUpdate(
+           context.AddressTypes.AddOrUpdate(
 
                 adty => adty.AddressTypeID, 
                  new AddressType { AddressTypeName = "Physical Address" },
                  new AddressType { AddressTypeName = "Postal Address" }
-            );*/
+            );
            
         }
     }

@@ -10,7 +10,7 @@ namespace DVT.DataAccess
 {
   public   class Profile
     {
-        public Profile( string firstName, string lastName, string email, string passwordHash, bool isApproved, int departmentId, int genderId, int UserTypeid  )
+        public Profile( string firstName, string lastName, string email, string passwordHash, bool isApproved)
         {
           
             FirstName = firstName;
@@ -18,11 +18,15 @@ namespace DVT.DataAccess
             Email = email;
             PasswordHash = passwordHash;
             this.isApproved = isApproved;
-            DepartmentID = departmentId;
             this.gender = gender;
-            GenderID = genderId;
-            UserTypeID = UserTypeid;
-          
+            //GenderID = genderId;
+            //UserTypeID = UserTypeid;
+            //DepartmentID = departmentId;
+        }
+
+        public Profile()
+        {
+
         }
 
         public int ProfileID { get; set; }
@@ -32,9 +36,9 @@ namespace DVT.DataAccess
         public string Email { get; set; }
         public string PasswordHash { get; set; }
         public bool isApproved { get; set; }
-        public Nullable< int> DepartmentID { get; set; }
-        public Nullable<int> GenderID { get; set; }
-        public Nullable<int> UserTypeID { get; set; }
+        //public Nullable< int> DepartmentID { get; set; }
+        //public Nullable<int> GenderID { get; set; }
+        //public Nullable<int> UserTypeID { get; set; }
         public virtual Department department { get; set; }
         public virtual Gender gender { get; set; }
         public virtual UserType usertype { get; set; }

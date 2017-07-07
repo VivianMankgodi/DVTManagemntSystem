@@ -29,7 +29,6 @@ namespace DVT.DataAccess.DataAccesses
             context.Profiles.Add(c);
            context.SaveChanges();
         }
-
         public void InsertAddresses(int UnitNo, string ComplexName, string StreetNo, string StreetName, int AddressTypeId, int SuburbID, int profileid)
         {
            
@@ -77,16 +76,10 @@ namespace DVT.DataAccess.DataAccesses
         public void RemoveProfile(int profileId)
         {
             var profile = context.Profiles.Find(profileId);
-            var profile2 = context.Profiles.Find(profile);
-
+            context.Profiles.Remove(profile);
+            context.SaveChanges();
         }
-
-
-    }
-
-
-}
-
+   
 
 
 }

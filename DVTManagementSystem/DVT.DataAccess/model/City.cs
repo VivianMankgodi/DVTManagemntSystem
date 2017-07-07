@@ -14,9 +14,6 @@ namespace DVT.DataAccess.model
         {
 
         }
-
-       
-       
         public int CityID { get; set; }
 
         [Required]

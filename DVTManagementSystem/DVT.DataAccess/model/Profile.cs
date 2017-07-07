@@ -36,9 +36,9 @@ namespace DVT.DataAccess
         public string Email { get; set; }
         public string PasswordHash { get; set; }
         public bool isApproved { get; set; }
-        //public Nullable< int> DepartmentID { get; set; }
-        //public Nullable<int> GenderID { get; set; }
-        //public Nullable<int> UserTypeID { get; set; }
+        public Nullable< int> DepartmentID { get; set; }
+        public Nullable<int> GenderID { get; set; }
+        public Nullable<int> UserTypeID { get; set; }
         public virtual Department department { get; set; }
         public virtual Gender gender { get; set; }
         public virtual UserType usertype { get; set; }

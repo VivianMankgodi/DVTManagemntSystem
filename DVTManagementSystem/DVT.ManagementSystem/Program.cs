@@ -11,9 +11,13 @@ namespace DVT.ManagementSystem
         static void Main(string[] args)
         {
            DataAccess.DataAccesses.DataAccess da = new DataAccess.DataAccesses.DataAccess();
-      //    da.insertProfile("lee", "lee", "kfg@hgd", "hghg", true, 1,1,2);
+            //    da.insertProfile("lee", "lee", "kfg@hgd", "hghg", true, 1,1,2);
 
-            da.InsertAddresses(120, "hello", "012", "kk", 3, 1, 8);
+            //    da.InsertAddresses(120, "hello", "012", "kk", 3, 1, 8);
+
+            da.SelectingUnapprovedProfile();
+
+            Console.ReadKey();
        }
     }
 }

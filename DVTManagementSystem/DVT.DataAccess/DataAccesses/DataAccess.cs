@@ -81,6 +81,36 @@ namespace DVT.DataAccess.DataAccesses
 
         }
 
+        public void SelectingUnapprovedProfile()
+        {
+            var Unaproved = (from pr in context.Profiles
+                                     join utype in context.userTypes on pr.UserTypeID  equals               utype.UserTypeID
+                                     join  dep in context.Departments on pr.DepartmentID equals dep.DepartmentID
+                                     join gen in context.Gender on pr.GenderID equals gen.GenderID  
+                             from ad in context.Addresses 
+                                    join adtype in context.AddressTypes on ad.AddressTypeID equals adtype.AddressTypeID  
+                                    join sub in context.suburbs on ad.SuburbID equals sub.SuburbID 
+                                    join  pos in context.PostalCodes on sub.PostalCodeID equals pos.PostalCodeID 
+                                    join c in context.Cities on sub.CityID equals c.CityID 
+                                    join prov in context.provinces on c.ProvinceID equals prov.ProvinceID 
+                                where pr.isApproved == false
+                                select new
+                                        {  pr.FirstName, pr.Email, pr.isApproved,
+                                           utype.UserTypeName,
+                                           dep.DepartmentName ,
+                                           gen.GenderName,
+                                           adtype.AddressTypeName,
+                                           ad.Unitno, ad.Streetno, ad.Streetname, ad.ComplexName,
+                                           sub.SuburbName,
+                                           pos.PostalCodeNumber,
+                                            c.CityName,
+                                            prov.ProvinceName });
+            foreach (var prof in Unaproved )
+            {
+                Console.WriteLine("FirstName: {0}, Email: {1}, isApproved: {2}, Usertype name: {3}, Department name: {4}, Gender type; {5} , AddressTypeName: {6}, Unitno: {7}, Streetno: {8}, Streetname: {9}, ComplexName: {10},SuburbName; {11}, PostalCodeNumber: {12}, CityName: {13},   ProvinceName: {14}\n", prof.FirstName, prof.Email, prof.isApproved , prof.UserTypeName, prof.DepartmentName, prof.GenderName, prof.AddressTypeName, prof.Unitno, prof.Streetno, prof.Streetname, prof.ComplexName, prof.SuburbName, prof.PostalCodeNumber, prof.CityName, prof.ProvinceName);
+            }
+        }
+
 
     }
 
@@ -89,6 +119,6 @@ namespace DVT.DataAccess.DataAccesses
 
 
 
-}
+
     
 

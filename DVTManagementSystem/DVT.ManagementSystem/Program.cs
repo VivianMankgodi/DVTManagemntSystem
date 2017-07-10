@@ -15,28 +15,47 @@ namespace DVT.ManagementSystem
             bool isApproved = false;
             int genderid = 0, departmentID = 0, userTypeID = 0;
             int UnitNo =0, AddressTypeId =0,  SuburbID =0,  profileid =0;
-            string ComplexName="", StreetNo="", StreetName=""; 
+            string ComplexName="", StreetNo="", StreetName="", pass=""; 
             DataAccess.DataAccesses.DataAccess da = new DataAccess.DataAccesses.DataAccess();
             string answer;
+            char LAnswer;
+            Console.Write("Are you Administrator? y/n: ");
+            LAnswer =Convert.ToChar(Console.ReadLine());
 
-            Console.Write("Adding a Profile or adding Address?");
-            answer = Console.ReadLine();
-
-            if (answer == "profile")
+          
+           
+            if (LAnswer == 'n')
             {
-                da.insertProfile(firstName, lastName, email, passwordHash, isApproved, genderid, departmentID, userTypeID);
+                Console.Write("Adding a Profile or adding Address or Login? ");
+                answer = Console.ReadLine();
+                if (answer == "profile")
+                {
+                    da.insertProfile(firstName, lastName, email, passwordHash, isApproved, genderid, departmentID, userTypeID);
 
+                }
+                if (answer == "Address")
+                {
+                    da.InsertAddresses(UnitNo, ComplexName, StreetNo, StreetName, AddressTypeId, SuburbID, profileid);
+                }
+                if (answer == "login")
+                {
+
+                    da.UpdatePassword(email, pass);
+                }
             }
-            if (answer == "Address")
+            else
             {
-                da.InsertAddresses(UnitNo, ComplexName,StreetNo,StreetName, AddressTypeId,SuburbID, profileid);
+                da.SelectingUnapprovedProfile();
             }
+            
 
+
+         
             //    da.insertProfile("lee", "lee", "kfg@hgd", "hghg", true, 1,1,2);
 
             //    da.InsertAddresses(120, "hello", "012", "kk", 3, 1, 8);
 
-            da.SelectingUnapprovedProfile();
+            //    
 
 
 

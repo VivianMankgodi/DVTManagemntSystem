@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.Security.Cryptography;
 
 namespace DVT.DataAccess.DataAccesses
 {
@@ -23,11 +24,15 @@ namespace DVT.DataAccess.DataAccesses
             lastName = Console.ReadLine();
             Console.Write("Enter your Email: ");
             email = Console.ReadLine();
+
             Console.Write("Enter a password: ");
             passwordHash = Console.ReadLine();
-            Console.WriteLine("Approved: type:True\n Unapproved: type: false");
-            Console.Write("Approved?: ");
-            isApproved = Convert.ToBoolean(Console.ReadLine());
+            SHA256 hash = new SHA256Cng();
+            
+            byte[] hashvalue = hash.ComputeHash(Encoding.UTF8.GetBytes(passwordHash));
+            passwordHash =System.Text.Encoding.Default.GetString(hashvalue);
+            Console.WriteLine(passwordHash);            
+            isApproved = false;
             Console.WriteLine("Gender: \n 1. Male\n 2. Female");
             Console.Write("Enter gender number: ");
             genderid = Convert.ToInt32(Console.ReadLine());
@@ -148,7 +153,7 @@ namespace DVT.DataAccess.DataAccesses
                                  pos.PostalCodeNumber,
                                  c.CityName,
                                  prov.ProvinceName
-                             });
+                             }).Distinct();
             foreach (var prof in Unaproved)
             {
                 Console.WriteLine("FirstName: {0}, Email: {1}, isApproved: {2}, Usertype name: {3}, Department name: {4}, Gender type; {5} , AddressTypeName: {6}, Unitno: {7}, Streetno: {8}, Streetname: {9}, ComplexName: {10},SuburbName; {11}, PostalCodeNumber: {12}, CityName: {13},   ProvinceName: {14}\n", prof.FirstName, prof.Email, prof.isApproved, prof.UserTypeName, prof.DepartmentName, prof.GenderName, prof.AddressTypeName, prof.Unitno, prof.Streetno, prof.Streetname, prof.ComplexName, prof.SuburbName, prof.PostalCodeNumber, prof.CityName, prof.ProvinceName);

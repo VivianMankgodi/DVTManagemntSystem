@@ -22,40 +22,33 @@ namespace DVT.ManagementSystem
             Console.Write("Are you Administrator? y/n: ");
             LAnswer =Convert.ToChar(Console.ReadLine());
 
-          
-           
-            if (LAnswer == 'n')
-            {
-                Console.Write("Adding a Profile or adding Address or Login? ");
-                answer = Console.ReadLine();
-                if (answer == "profile")
+
+            da.insertProfile(firstName, lastName, email, passwordHash, isApproved, genderid, departmentID, userTypeID);
+               if (LAnswer == 'n')
                 {
-                    da.insertProfile(firstName, lastName, email, passwordHash, isApproved, genderid, departmentID, userTypeID);
+                    Console.Write("Adding a Profile or adding Address or Login? ");
+                    answer = Console.ReadLine();
+                    if (answer == "profile")
+                    {
+                        da.insertProfile(firstName, lastName, email, passwordHash, isApproved, genderid, departmentID, userTypeID);
 
+                    }
+                    if (answer == "Address")
+                    {
+                        da.InsertAddresses(UnitNo, ComplexName, StreetNo, StreetName, AddressTypeId, SuburbID, profileid);
+                    }
+                    if (answer == "login")
+                    {
+
+                        da.UpdatePassword(email, pass);
+                    }
                 }
-                if (answer == "Address")
+                else
                 {
-                    da.InsertAddresses(UnitNo, ComplexName, StreetNo, StreetName, AddressTypeId, SuburbID, profileid);
+                    da.SelectingUnapprovedProfile();
                 }
-                if (answer == "login")
-                {
 
-                    da.UpdatePassword(email, pass);
-                }
-            }
-            else
-            {
-                da.SelectingUnapprovedProfile();
-            }
-            
-
-
-         
-            //    da.insertProfile("lee", "lee", "kfg@hgd", "hghg", true, 1,1,2);
-
-            //    da.InsertAddresses(120, "hello", "012", "kk", 3, 1, 8);
-
-            //    
+ 
 
 
 

@@ -104,6 +104,10 @@
     <Compile Include="Migrations\201707050657428_changedata.Designer.cs">
       <DependentUpon>201707050657428_changedata.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707070214356_modifiedclasses.cs" />
+    <Compile Include="Migrations\201707070214356_modifiedclasses.Designer.cs">
+      <DependentUpon>201707070214356_modifiedclasses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Logs.cs" />
     <Compile Include="model\Addresses.cs" />
@@ -164,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707050657428_changedata.resx">
       <DependentUpon>201707050657428_changedata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707070214356_modifiedclasses.resx">
+      <DependentUpon>201707070214356_modifiedclasses.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

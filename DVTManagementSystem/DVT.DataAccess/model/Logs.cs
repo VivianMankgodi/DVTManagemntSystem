@@ -24,9 +24,8 @@ public Logs()
         [Required]
         public DateTime LogDateTime { get; set; }
 
-       //[ForeignKey("ProfileID")]
-       //[Required ]
-       // public int UserProfileID { get; set; }
+
+        public Nullable<int> UserProfileID { get; set; }
 
         public virtual Profile profile { get; set; }
        

@@ -18,6 +18,8 @@ namespace DVT.DataAccess.Migrations
 
         protected override void Seed(DVT.DataAccess.Context.ManagementSystemContext context)
         {
+            context.Database.Delete();
+            context.Database.CreateIfNotExists();
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

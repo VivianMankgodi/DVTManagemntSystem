@@ -14,18 +14,16 @@ namespace DVT.DataAccess.model
         {
 
         }
-
-       
-       
         public int CityID { get; set; }
 
         [Required]
         [StringLength(maximumLength:255)]
         public string CityName { get; set; }
-        public Nullable<int> ProvinceID { get; set; }
 
-        public virtual Province province { get; set; }
+        public int ProvinceID { get; set; }
 
-        public virtual ICollection<Suburb > suburbs { get; set; }
+        public virtual Province Province { get; set; }
+
+        public virtual ICollection<Suburb > Suburb { get; set; }
     }
 }

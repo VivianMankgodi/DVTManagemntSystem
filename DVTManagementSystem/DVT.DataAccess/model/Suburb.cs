@@ -20,9 +20,9 @@ namespace DVT.DataAccess.model
         [Required ]
         [StringLength(maximumLength:255)]
         public string SuburbName { get; set; }
-        public Nullable<int> PostalCodeID { get; set; }
-        public Nullable<int> CityID { get; set; }
-        public virtual PostalCode postalCode { get; set; }
+        public int PostalCodeID { get; set; }
+        public int CityID { get; set; }
+        public virtual PostalCode PostalCodeIDpostalCode { get; set; }
         public virtual City city { get; set; }
 
 

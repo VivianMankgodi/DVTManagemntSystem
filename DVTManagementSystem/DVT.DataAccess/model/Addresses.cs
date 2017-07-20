@@ -20,6 +20,8 @@ namespace DVT.DataAccess.model
             Streetno = streetno;
             Streetname = streetname;
         }
+        public Addresses()
+        { }
 
         public int AddressesID { get; set; }
            

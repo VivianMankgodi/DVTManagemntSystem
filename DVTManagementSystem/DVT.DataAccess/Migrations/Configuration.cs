@@ -7,7 +7,7 @@ namespace DVT.DataAccess.Migrations
     using model;
 
     using System.Security.Cryptography;
-
+    using System.Collections.Generic;
 
     internal sealed class Configuration : DbMigrationsConfiguration<DVT.DataAccess.Context.ManagementSystemContext>
     {
@@ -18,8 +18,8 @@ namespace DVT.DataAccess.Migrations
 
         protected override void Seed(DVT.DataAccess.Context.ManagementSystemContext context)
         {
-           // context.Database.Delete();
-           // context.Database.CreateIfNotExists();
+            // context.Database.Delete();
+            // context.Database.CreateIfNotExists();
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
@@ -32,53 +32,71 @@ namespace DVT.DataAccess.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-            Province p1 = new Province { ProvinceName = "Gauteng" };
-            Province p2 = new Province { ProvinceName = "Limpopo" };
-           context.provinces.AddOrUpdate(
-               p1,p2
-                );
 
-            City c1 = new City { CityName = "Johannesburg",  province = p1 };
-            City c2 = new City { CityName = "Tshwane",  province = p1 };
 
-            context.Cities.AddOrUpdate(c1,c2);
+            var province = new List<Province>
+            {
+                new Province {ProvinceName = "Gauteng"},
+                new Province {ProvinceName = "Limpopo"},
+                new Province {ProvinceName = "Freestate"},
+                new Province {ProvinceName = "North west"},
+                new Province {ProvinceName = "Cape town"}
 
-            PostalCode pc1 = new PostalCode { PostalCodeNumber = "2192" };
-            PostalCode pc2 = new PostalCode { PostalCodeNumber = "2190" };
-            PostalCode pc3 = new PostalCode { PostalCodeNumber = "2091" };
+            };
+            province.ForEach(pro => context.provinces.AddOrUpdate(pr => new
+            {
+                pr.ProvinceName
+            }, pro));
 
-            context.PostalCodes.AddOrUpdate(pc1,pc2,pc3 );
+            var postalcode = new List<PostalCode>
+            {
+                new PostalCode {PostalCodeNumber = "2192"},
+                new PostalCode {PostalCodeNumber = "2190"},
+                new PostalCode {PostalCodeNumber = "2091"},
+                new PostalCode {PostalCodeNumber = "0008"}
+            };
+            postalcode.ForEach(p => context.PostalCodes.AddOrUpdate(pc => pc.PostalCodeNumber, p));
 
-            Suburb s1 = new Suburb { SuburbName = "ABBOTSFORD",postalCode= pc1,city= c1};
-            Suburb s2 = new Suburb { SuburbName = "AEROTON",postalCode=pc2, city= c1 };
-            Suburb s3 = new Suburb { SuburbName = "ALAN MANOR", postalCode = pc3, city= c1};
-            context.suburbs.AddOrUpdate(s1,s2,s3 );
 
-            context.Departments.AddOrUpdate(
-                p => p.DepartmentID,
-                new Department { DepartmentName = "GMIC", DepartmentDescription = "Gauteng Microsoft" },
-                new model.Department { DepartmentName = "GMOB", DepartmentDescription = "Gauteng Mobility" },
-                new model.Department { DepartmentName = "GQUA", DepartmentDescription = "Gauteng Quality Assurance" }
-                );
-            context.Gender.AddOrUpdate(
-                p=>p.GenderID,
+            var city = new List<City>
+            {
+                new City {CityName = "Johannesburg", ProvinceID = 1},
+                new City {CityName = "Tshwane", ProvinceID = 1}
+            };
+            city.ForEach(c => context.Cities.AddOrUpdate(ci => new {ci.CityName, ci.ProvinceID}, c));
+
+
+            var suburb = new List<Suburb>
+            {
+                new Suburb {SuburbName = "ABBOTSFORD", PostalCodeID = 1, CityID = 1},
+               new Suburb {SuburbName = "AEROTON", PostalCodeID = 2, CityID = 1},
+               new Suburb {SuburbName = "ALAN-MANOR", PostalCodeID = 2, CityID = 1},
+               new Suburb {SuburbName = "Midrand", PostalCodeID = 40, CityID= 1 }
+               
+            };
+            suburb.ForEach(su => context.suburbs.AddOrUpdate(s => new { s.SuburbName, s.PostalCodeID, s.CityID }, su));
+
+
+            var department = new List<Department>
+            {
+                new Department {DepartmentName = "GMIC", DepartmentDescription = "Gauteng Microsoft"},
+                new Department {DepartmentName = "GMOB", DepartmentDescription = "Gauteng Mobility"},
+                new Department {DepartmentName = "GQUA", DepartmentDescription = "Gauteng Quality Assurance"}
+            };
+            department.ForEach(de => context.Departments.AddOrUpdate(d => new { d.DepartmentName, d.DepartmentDescription
+        } ,de));
+            
+
+            var gender = new List<Gender >
+            {
                 new model.Gender { GenderName = "Male"},
                 new model.Gender { GenderName = "Female" }
-                );
+            };
+            gender.ForEach(ge=> context.Gender.AddOrUpdate(g=> g.GenderName , ge ));
+            context.SaveChanges();
+  
 
-            context.userTypes.AddOrUpdate(
-                p=>p.UserTypeID,
-                new model.UserType { UserTypeName = "Admin"},
-                 new model.UserType { UserTypeName = "Employee" }
-                );
-
-           context.AddressTypes.AddOrUpdate(
-
-                adty => adty.AddressTypeID, 
-                 new AddressType { AddressTypeName = "Physical Address" },
-                 new AddressType { AddressTypeName = "Postal Address" }
-            );
-           
         }
     }
+    
 }

@@ -111,26 +111,28 @@ namespace DVT.DataAccess.DataAccesses
         public void SelectingUnapprovedProfile()
         {
 
-         //   var query = context.Profiles.Where(pr => pr.isApproved == false)
-              //  .Select(pr => new {pr.FirstName, pr.gender.GenderName, pr.department.DepartmentID, pr.isApproved, context.Addresses.Include( p=> p.ComplexName),pr.addresses.Select()})//.Include(context.Addresses.Select(pr=> new {pr.}))
-                ;
-            Profile p = new Profile();
-            var q = context.Profiles.Include(a => a.addresses.Select(ad => ad.ComplexName)).Select(pr => pr.FirstName);
+   
+           
+           // var query = context.Profiles.Where(pr => pr.isApproved).Include(a => a.addresses.Select(ad => new { ad.suburb.city.Province, ad.addressType})).Select(pro => new{pro.FirstName, pro.LastName, pro.isApproved, pro.gender.GenderName,pro.department.DepartmentName,});
 
+            var query = context.Profiles.Where(pr => pr.isApproved).Select(pro => new
+            {
+                pro.FirstName,
+                pro.LastName,
+                pro.isApproved,
+                pro.gender.GenderName,
+                pro.department.DepartmentName,
+                SubName = pro.addresses.FirstOrDefault(add => add.AddressTypeID == 1) != null? pro.addresses.FirstOrDefault(add=> add.AddressTypeID==1).suburb.SuburbName:"",
+                citName= pro.addresses.FirstOrDefault(add=> add.AddressTypeID == 1)!=null?pro.addresses.FirstOrDefault(add=> add.AddressTypeID ==1).suburb.city.CityName:"",
+                provinceName = pro.addresses.FirstOrDefault(add=> add.AddressTypeID == 1)!=null? pro.addresses.FirstOrDefault(add=> add.AddressTypeID ==1).suburb.city.Province.ProvinceName :""
+            });
 
-            var query = context.Profiles.Where(pr => pr.isApproved).Include(a => a.addresses.Select(ad => new { ad.suburb.city.Province, ad.addressType,}))
-                .Select(pro => new{pro.FirstName, pro.LastName, pro.isApproved, pro.gender.GenderName,pro.department.DepartmentName});
            
             foreach (var item in query)
             {
              Console.WriteLine(item);   
             }
       
-           foreach (var item in q)
-            {
-                 Console.WriteLine(item.Distinct());   
-            }
-            
 
             /*var Unaproved = (from pr in context.Profiles
                              join utype in context.userTypes on pr.UserTypeID equals utype.UserTypeID

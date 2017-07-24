@@ -115,6 +115,18 @@ namespace DVT.DataAccess.DataAccesses
            
            // var query = context.Profiles.Where(pr => pr.isApproved).Include(a => a.addresses.Select(ad => new { ad.suburb.city.Province, ad.addressType})).Select(pro => new{pro.FirstName, pro.LastName, pro.isApproved, pro.gender.GenderName,pro.department.DepartmentName,});
 
+            //var query = context.Profiles.Where(pr => pr.isApproved).Select(pro => new
+            //{
+            //    pro.FirstName,
+            //    pro.LastName,
+            //    pro.isApproved,
+            //    pro.gender.GenderName,
+            //    pro.department.DepartmentName,
+            //    SubName = pro.addresses.FirstOrDefault(add => add.AddressTypeID == 1) != null? pro.addresses.FirstOrDefault(add=> add.AddressTypeID==1).suburb.SuburbName:"",
+            //    citName= pro.addresses.FirstOrDefault(add=> add.AddressTypeID == 1)!=null?pro.addresses.FirstOrDefault(add=> add.AddressTypeID ==1).suburb.city.CityName:"",
+            //    provinceName = pro.addresses.FirstOrDefault(add=> add.AddressTypeID == 1)!=null? pro.addresses.FirstOrDefault(add=> add.AddressTypeID ==1).suburb.city.Province.ProvinceName :""
+            //});
+
             var query = context.Profiles.Where(pr => pr.isApproved).Select(pro => new
             {
                 pro.FirstName,
@@ -122,17 +134,34 @@ namespace DVT.DataAccess.DataAccesses
                 pro.isApproved,
                 pro.gender.GenderName,
                 pro.department.DepartmentName,
-                SubName = pro.addresses.FirstOrDefault(add => add.AddressTypeID == 1) != null? pro.addresses.FirstOrDefault(add=> add.AddressTypeID==1).suburb.SuburbName:"",
-                citName= pro.addresses.FirstOrDefault(add=> add.AddressTypeID == 1)!=null?pro.addresses.FirstOrDefault(add=> add.AddressTypeID ==1).suburb.city.CityName:"",
-                provinceName = pro.addresses.FirstOrDefault(add=> add.AddressTypeID == 1)!=null? pro.addresses.FirstOrDefault(add=> add.AddressTypeID ==1).suburb.city.Province.ProvinceName :""
+                SubName =  pro.addresses.FirstOrDefault().suburb.SuburbName,
+                citName =pro.addresses.FirstOrDefault(add => add.AddressTypeID == 1).suburb.city.CityName,
+                provinceName =  pro.addresses.FirstOrDefault().suburb.city.Province.ProvinceName 
             });
+            //foreach (var item in query)
+            //{
+            // Console.WriteLine(item);   
+            //}
 
-           
-            foreach (var item in query)
+
+            var unapproved = context.Profiles.Where(pr => pr.isApproved == false).Select(pro => new
             {
-             Console.WriteLine(item);   
+                pro.FirstName,
+                pro.LastName,
+                pro.gender.GenderName,
+                pro.department.DepartmentName,
+                pro.isApproved,
+                streetNum = pro.addresses.FirstOrDefault(add => add.AddressTypeID == 1) != null ? pro.addresses.FirstOrDefault().Unitno : 0,
+                StreetName = pro.addresses.FirstOrDefault(add=> add.AddressTypeID== 1)!= null? pro.addresses.FirstOrDefault().Streetname :"", pro.addresses.FirstOrDefault().ComplexName,pro.addresses.FirstOrDefault().Streetno, pro.addresses.FirstOrDefault().suburb.SuburbName, pro.addresses.FirstOrDefault().suburb.city.CityName,pro.addresses.FirstOrDefault().suburb.city.Province.ProvinceName
+            }).Distinct();
+
+            string replace = "";
+
+            foreach (var UnapprovedUser in unapproved )
+            {
+                
+                Console.WriteLine(UnapprovedUser.ToString().Replace("{","\n").Replace("}","\n")) ;
             }
-      
 
             /*var Unaproved = (from pr in context.Profiles
                              join utype in context.userTypes on pr.UserTypeID equals utype.UserTypeID

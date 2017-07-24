@@ -52,9 +52,105 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Context\ManagementSystemContext.cs" />
     <Compile Include="DataAccesses\DataAccess.cs" />
-    <Compile Include="Migrations\201707200746519_initial.cs" />
-    <Compile Include="Migrations\201707200746519_initial.Designer.cs">
-      <DependentUpon>201707200746519_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201707191356167_initial1.cs" />
+    <Compile Include="Migrations\201707191356167_initial1.Designer.cs">
+      <DependentUpon>201707191356167_initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707191357261_initial2.cs" />
+    <Compile Include="Migrations\201707191357261_initial2.Designer.cs">
+      <DependentUpon>201707191357261_initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707191401389_initial3.cs" />
+    <Compile Include="Migrations\201707191401389_initial3.Designer.cs">
+      <DependentUpon>201707191401389_initial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707191403133_initial4.cs" />
+    <Compile Include="Migrations\201707191403133_initial4.Designer.cs">
+      <DependentUpon>201707191403133_initial4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707191404505_initial5.cs" />
+    <Compile Include="Migrations\201707191404505_initial5.Designer.cs">
+      <DependentUpon>201707191404505_initial5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707191419211_initial6.cs" />
+    <Compile Include="Migrations\201707191419211_initial6.Designer.cs">
+      <DependentUpon>201707191419211_initial6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707191420228_initial61.cs" />
+    <Compile Include="Migrations\201707191420228_initial61.Designer.cs">
+      <DependentUpon>201707191420228_initial61.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707191426134_initial62.cs" />
+    <Compile Include="Migrations\201707191426134_initial62.Designer.cs">
+      <DependentUpon>201707191426134_initial62.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200551454_seed.cs" />
+    <Compile Include="Migrations\201707200551454_seed.Designer.cs">
+      <DependentUpon>201707200551454_seed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200553334_seed1.cs" />
+    <Compile Include="Migrations\201707200553334_seed1.Designer.cs">
+      <DependentUpon>201707200553334_seed1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200554264_seed11.cs" />
+    <Compile Include="Migrations\201707200554264_seed11.Designer.cs">
+      <DependentUpon>201707200554264_seed11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200557092_seed2.cs" />
+    <Compile Include="Migrations\201707200557092_seed2.Designer.cs">
+      <DependentUpon>201707200557092_seed2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200604193_seed3.cs" />
+    <Compile Include="Migrations\201707200604193_seed3.Designer.cs">
+      <DependentUpon>201707200604193_seed3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200605513_seed31.cs" />
+    <Compile Include="Migrations\201707200605513_seed31.Designer.cs">
+      <DependentUpon>201707200605513_seed31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200607100_seed32.cs" />
+    <Compile Include="Migrations\201707200607100_seed32.Designer.cs">
+      <DependentUpon>201707200607100_seed32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200607571_seed33.cs" />
+    <Compile Include="Migrations\201707200607571_seed33.Designer.cs">
+      <DependentUpon>201707200607571_seed33.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200608281_seed34.cs" />
+    <Compile Include="Migrations\201707200608281_seed34.Designer.cs">
+      <DependentUpon>201707200608281_seed34.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200608527_seed4.cs" />
+    <Compile Include="Migrations\201707200608527_seed4.Designer.cs">
+      <DependentUpon>201707200608527_seed4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200610239_seed5.cs" />
+    <Compile Include="Migrations\201707200610239_seed5.Designer.cs">
+      <DependentUpon>201707200610239_seed5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200611235_seed51.cs" />
+    <Compile Include="Migrations\201707200611235_seed51.Designer.cs">
+      <DependentUpon>201707200611235_seed51.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200617022_seed52.cs" />
+    <Compile Include="Migrations\201707200617022_seed52.Designer.cs">
+      <DependentUpon>201707200617022_seed52.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200617342_seed6.cs" />
+    <Compile Include="Migrations\201707200617342_seed6.Designer.cs">
+      <DependentUpon>201707200617342_seed6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200618024_seed7.cs" />
+    <Compile Include="Migrations\201707200618024_seed7.Designer.cs">
+      <DependentUpon>201707200618024_seed7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200619073_seed71.cs" />
+    <Compile Include="Migrations\201707200619073_seed71.Designer.cs">
+      <DependentUpon>201707200619073_seed71.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707200623160_seed72.cs" />
+    <Compile Include="Migrations\201707200623160_seed72.Designer.cs">
+      <DependentUpon>201707200623160_seed72.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Logs.cs" />
@@ -77,8 +173,80 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201707200746519_initial.resx">
-      <DependentUpon>201707200746519_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707191356167_initial1.resx">
+      <DependentUpon>201707191356167_initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707191357261_initial2.resx">
+      <DependentUpon>201707191357261_initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707191401389_initial3.resx">
+      <DependentUpon>201707191401389_initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707191403133_initial4.resx">
+      <DependentUpon>201707191403133_initial4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707191404505_initial5.resx">
+      <DependentUpon>201707191404505_initial5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707191419211_initial6.resx">
+      <DependentUpon>201707191419211_initial6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707191420228_initial61.resx">
+      <DependentUpon>201707191420228_initial61.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707191426134_initial62.resx">
+      <DependentUpon>201707191426134_initial62.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200551454_seed.resx">
+      <DependentUpon>201707200551454_seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200553334_seed1.resx">
+      <DependentUpon>201707200553334_seed1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200554264_seed11.resx">
+      <DependentUpon>201707200554264_seed11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200557092_seed2.resx">
+      <DependentUpon>201707200557092_seed2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200604193_seed3.resx">
+      <DependentUpon>201707200604193_seed3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200605513_seed31.resx">
+      <DependentUpon>201707200605513_seed31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200607100_seed32.resx">
+      <DependentUpon>201707200607100_seed32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200607571_seed33.resx">
+      <DependentUpon>201707200607571_seed33.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200608281_seed34.resx">
+      <DependentUpon>201707200608281_seed34.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200608527_seed4.resx">
+      <DependentUpon>201707200608527_seed4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200610239_seed5.resx">
+      <DependentUpon>201707200610239_seed5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200611235_seed51.resx">
+      <DependentUpon>201707200611235_seed51.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200617022_seed52.resx">
+      <DependentUpon>201707200617022_seed52.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200617342_seed6.resx">
+      <DependentUpon>201707200617342_seed6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200618024_seed7.resx">
+      <DependentUpon>201707200618024_seed7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200619073_seed71.resx">
+      <DependentUpon>201707200619073_seed71.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707200623160_seed72.resx">
+      <DependentUpon>201707200623160_seed72.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

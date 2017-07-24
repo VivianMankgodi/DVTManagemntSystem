@@ -21,6 +21,10 @@ namespace DVT.DataAccess
             
         }
 
+        public Profile(int profileId)
+        {
+            ProfileID = profileId;
+        }
         public Profile(string passsword)
         {
 

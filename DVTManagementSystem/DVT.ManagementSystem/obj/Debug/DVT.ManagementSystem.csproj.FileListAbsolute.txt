@@ -34,3 +34,7 @@ C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagemntSystem\DVTManagement
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagemntSystem\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\EntityFramework.xml
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagemntSystem\DVTManagementSystem\DVT.ManagementSystem\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagemntSystem\DVTManagementSystem\DVT.ManagementSystem\obj\Debug\DVT.ManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagemntSystem\DVTManagementSystem\DVT.ManagementSystem\obj\Debug\DVT.DataAccess.Migrations.initial.resources
+C:\Users\VTebeila\Desktop\DVT\Work\Applications\DVTManagemntSystem\DVTManagementSystem\DVT.ManagementSystem\obj\Debug\DVT.ManagementSystem.csproj.GenerateResource.Cache
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.ManagementSystem\obj\Debug\DVT.DataAccess.Migrations.initial.resources
+C:\Users\lshabangu\Desktop\Project\DVTManagementSystem\DVTManagementSystem\DVT.ManagementSystem\obj\Debug\DVT.ManagementSystem.csproj.GenerateResource.Cache

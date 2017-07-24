@@ -13,10 +13,13 @@ namespace DVT.ManagementSystem
 {
   internal class Program
   {
-        public static void Main(string[] args)
-        {
-            var da = new DataAccess.DataAccesses.DataAccess(); 
-             Console.Write("Are you an Administrator? y/n: ");
+    public static void Main(string[] args)
+    {
+       
+
+            var da = new DataAccess.DataAccesses.DataAccess();
+        da.SelectingUnapprovedProfile();
+            Console.Write("Are you an Administrator? y/n: ");
             var initanswer = Console.ReadLine();
            
             if (initanswer == "n")
@@ -54,7 +57,7 @@ namespace DVT.ManagementSystem
                     Console.WriteLine("User type:\n 1. Admin\n 2. Employee");
 
 
-                    da.InsertProfile(firstName, lastName, email, passwordHash, false, genderid, departmentID, 1);
+                   da.InsertProfile(firstName, lastName, email, passwordHash, false, genderid, departmentID, 1);
                     Console.WriteLine("Profile Added");
                 }
                 if (answer == "2")
@@ -73,7 +76,7 @@ namespace DVT.ManagementSystem
                     Console.Write("Enter Suburb: ");
                     var SuburbID = ToInt32(Console.ReadLine());
                     Console.Write("Enter Profile Name: ");
-                    var profilename = (Console.ReadLine());
+                    var profilename = Convert.ToInt32(Console.ReadLine());
 
                     da.InsertAddresses(UnitNo, ComplexName, StreetNo, StreetName, AddressTypeId, SuburbID, profilename);
                 }
@@ -84,7 +87,7 @@ namespace DVT.ManagementSystem
                     Console.Write("Enter your password: ");
                     var pass = Console.ReadLine();
 
-                    da.UpdatePassword(email, pass);
+                 // da.UpdatePassword(email, pass);
                     Console.WriteLine("You successfully changed your password ");
                 }
             }
@@ -105,14 +108,12 @@ namespace DVT.ManagementSystem
                     Console.WriteLine("Enter the address ID to Delete ");
                     int addID = Convert.ToInt32(Console.ReadLine());
 
-                    da.RemoveProfileAddress(proID,addID);
+                   // da.RemoveProfileAddress(proID,addID);
                     
                     Console.WriteLine(@"Profile Removed");
                     Console.ReadLine();
                 }
             }
-        }
-
-       
-    }
+        }     
+  }
 }

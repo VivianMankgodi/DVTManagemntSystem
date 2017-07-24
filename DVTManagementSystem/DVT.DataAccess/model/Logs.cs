@@ -8,26 +8,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DVT.DataAccess
 {
- public    class Logs
+ public class Logs
     {
 
-public Logs()
+        public Logs()
         {
 
         }
 
-        
         public int LogsID { get; set; }
         [Required ]
         [StringLength(maximumLength:255)]
         public string Message { get; set; }
         [Required]
         public DateTime LogDateTime { get; set; }
-
-
-        public Nullable<int> UserProfileID { get; set; }
-
-        public virtual Profile profile { get; set; }
+        public virtual Profile Profile { get; set; }
        
     }
 }

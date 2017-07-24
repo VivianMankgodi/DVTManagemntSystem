@@ -18,7 +18,6 @@ namespace DVT.DataAccess.model
         [Required]
         [StringLength(4)]
         public string PostalCodeNumber { get; set; }
-
         public virtual  ICollection<Suburb> Suburb { get; set; }
 
     }

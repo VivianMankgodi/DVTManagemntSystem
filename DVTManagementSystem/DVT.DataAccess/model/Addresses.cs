@@ -7,39 +7,33 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DVT.DataAccess.model
 {
-   public  class Addresses
+   public class Addresses
     {
-       /* public Addresses()
-        {
-        }
-*/
         public Addresses(int unitno, string complexName, string streetno, string streetname)
-        {          
-            Unitno = unitno;
+        {
+            UnitNo = unitno;
             ComplexName = complexName;
-            Streetno = streetno;
-            Streetname = streetname;
+            StreetNo = streetno;
+            StreetName = streetname;
         }
+
         public Addresses()
-        { }
+        {
+            
+        }
 
         public int AddressesID { get; set; }
-           
-        public int Unitno { get; set; }
+        public int UnitNo { get; set; }
         [Required]
         [StringLength(maximumLength:255)]
         public string ComplexName { get; set; }
         [StringLength(10)]
-        public string Streetno { get; set; }
-
+        public string StreetNo { get; set; }
         [StringLength(maximumLength:(255))]
-        public string Streetname { get; set; }
-        public Nullable<int> AddressTypeID { get; set; }
-        public virtual AddressType addressType { get; set; }
-        public Nullable<int> SuburbID { get; set; }
-        public virtual Suburb  suburb { get; set; }
-        
-        public ICollection<Profile> profiles { get; set; }
+        public string StreetName { get; set; }
+        public virtual AddressType AddressType { get; set; }
+        public virtual Suburb  Suburb { get; set; }
+        public ICollection<Profile> Profiles { get; set; }
 
     }
 }

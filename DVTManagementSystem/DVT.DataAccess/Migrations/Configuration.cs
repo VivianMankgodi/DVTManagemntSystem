@@ -36,10 +36,10 @@ namespace DVT.DataAccess.Migrations
             Province p2 = new Province { ProvinceName = "Limpopo" };
            context.provinces.AddOrUpdate(
                p1,p2
-                );
+            );
 
-            City c1 = new City { CityName = "Johannesburg",  province = p1 };
-            City c2 = new City { CityName = "Tshwane",  province = p1 };
+            City c1 = new City { CityName = "Johannesburg",  Province = p1 };
+            City c2 = new City { CityName = "Tshwane",  Province = p1 };
 
             context.Cities.AddOrUpdate(c1,c2);
 
@@ -49,9 +49,9 @@ namespace DVT.DataAccess.Migrations
 
             context.PostalCodes.AddOrUpdate(pc1,pc2,pc3 );
 
-            Suburb s1 = new Suburb { SuburbName = "ABBOTSFORD",postalCode= pc1,city= c1};
-            Suburb s2 = new Suburb { SuburbName = "AEROTON",postalCode=pc2, city= c1 };
-            Suburb s3 = new Suburb { SuburbName = "ALAN MANOR", postalCode = pc3, city= c1};
+            Suburb s1 = new Suburb { SuburbName = "ABBOTSFORD",PostalCode= pc1,City= c1};
+            Suburb s2 = new Suburb { SuburbName = "AEROTON",PostalCode= pc2, City= c1 };
+            Suburb s3 = new Suburb { SuburbName = "ALAN MANOR", PostalCode = pc3, City= c1};
             context.suburbs.AddOrUpdate(s1,s2,s3 );
 
             context.Departments.AddOrUpdate(

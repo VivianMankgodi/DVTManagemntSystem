@@ -18,10 +18,7 @@ namespace DVT.DataAccess
             Email = email;
             PasswordHash = passwordHash;
             this.isApproved = isApproved;
-            this.gender = gender;
-            //GenderID = genderId;
-            //UserTypeID = UserTypeid;
-            //DepartmentID = departmentId;
+            
         }
 
         public Profile(string passsword)
@@ -40,14 +37,11 @@ namespace DVT.DataAccess
         public string Email { get; set; }
         public string PasswordHash { get; set; }
         public bool isApproved { get; set; }
-        public Nullable< int> DepartmentID { get; set; }
-        public Nullable<int> GenderID { get; set; }
-        public Nullable<int> UserTypeID { get; set; }
-        public virtual Department department { get; set; }
-        public virtual Gender gender { get; set; }
-        public virtual UserType usertype { get; set; }
-        public ICollection<Logs> logs { get; set; }
-        public ICollection<Addresses> addresses { get; set; }
+        public virtual Department Department { get; set; }
+        public virtual Gender Gender { get; set; }
+        public virtual UserType UserType { get; set; }
+        public ICollection<Logs> Logs { get; set; }
+        public ICollection<Addresses> Addresses { get; set; }
 
     }
 }

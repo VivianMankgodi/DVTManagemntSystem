@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace DVT.DataAccess.model
 {
-public     class Gender
+public class Gender
     {
         public int GenderID { get; set; }
         [Required]
         public string GenderName { get; set; }
-
-        public virtual ICollection <Profile> profile { get; set; }
+        public virtual ICollection <Profile> Profile { get; set; }
     }
 }

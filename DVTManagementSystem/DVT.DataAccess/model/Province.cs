@@ -20,7 +20,6 @@ namespace DVT.DataAccess.model
         [Required]
         [StringLength(50)]
         public string ProvinceName { get; set; }
-       
         public virtual  ICollection<City> Cities { get; set; }
     }
 }

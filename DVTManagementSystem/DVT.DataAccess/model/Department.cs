@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace DVT.DataAccess.model
 {
-  public   class Department
+  public class Department
     {
 
         public int DepartmentID { get; set; }
         [Required]
-        public String DepartmentName { get; set; }
-        public String DepartmentDescription { get; set; }
-
-        public virtual  ICollection <Profile> profile { get; set; }
+        public string DepartmentName { get; set; }
+        public string DepartmentDescription { get; set; }
+        public virtual ICollection <Profile> Profile { get; set; }
         
     }
 }

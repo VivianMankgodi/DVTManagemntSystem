@@ -18,8 +18,7 @@ namespace DVT.DataAccess.model
         [Required ]
         [StringLength(20)]
         public string AddressTypeName { get; set; }
-
-        public virtual  ICollection<Addresses > address { get; set; }
+        public virtual  ICollection<Addresses > Address { get; set; }
 
         
     }
